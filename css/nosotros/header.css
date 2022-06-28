@@ -1,0 +1,244 @@
+:root {
+    --clr-letra: rgb(255, 255, 255);
+    --clr-Uno: #FF7C00;
+    --clr-Dos: linear-gradient(rgba(255, 124, 0, 80%), rgba(255, 124, 0, 80%));
+    --opacity: linear-gradient(rgba(5, 7, 12, 0.361), rgba(5, 7, 12, 0.50));
+    --opacity-dos: linear-gradient(rgba(5, 7, 12, 0.681), rgba(5, 7, 12, 0.691));
+    --sombra-dos: linear-gradient(rgba(24, 24, 24, 0.1), rgba(24, 24, 24, 0.1));
+
+    --f-h1: Minion Variable Concept;
+    --f-h2: Louis George Café, sans-serif;
+    --f-h3: Louis George Café Light,
+
+    --fw-uno: 500;
+    --fw-dos: 100;
+
+    --fs-uno: 4em;  
+    --fs-dos:1.5em;
+    --fs-tres:1.5em;
+    --fs-pre: 2.5em;  
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+body::-webkit-scrollbar{
+    width: 4px;
+    background: #000000;
+}
+body::-webkit-scrollbar-thumb{
+    width: 2px;
+    background: #ff7b00;
+    border-radius: 50px;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    /* background: var(--opacity), url("../../imagenes/galeria/hotel/13.jpg") no-repeat center center; */
+    background-size: cover;
+    position: relative;
+}
+
+/*----------------------------------- Menu ----------------------------*/
+
+nav{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    animation: nav-animation 1.5s ease-in-out;
+}
+
+/*----------------------------------- Logo -----------------------------*/
+
+.logo img{
+    height: auto;
+    width: 140px;
+    margin: 0 auto;
+    animation: logo-animation 1.5s ease-in-out;
+
+}
+
+/*---------------------------- Linea de division --------------------------*/
+
+.division{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: linea-animation 1.5s ease-in-out;
+
+}
+.linea{
+    height: 1px;
+    width: 80%;
+    background: #b9b9b9;
+    bottom: 50px;
+    position: relative;
+}
+
+/*-------------------------------- H1 ----------------------------------*/
+
+.arenal{
+    position: relative;
+    font-family: var(--f-h1);
+    color: var(--clr-letra);
+    font-size: 3em;
+    font-weight: 100;
+    margin-left: 20px;
+    bottom: 20px;
+    animation: arenal-animation 1.5s ease-in-out;
+
+}
+.vista{
+    position: relative;
+    font-family: var(--f-h1);
+    color: var(--clr-letra);
+    opacity: 0.8;
+    font-size: 2.8em;
+    font-weight: 100;
+    bottom: 50px;
+    margin-left: 50px;
+    animation: vista-animation 1.5s ease-in-out;
+
+}
+
+/*------------------------------------- Botón CTA --------------------------------------*/
+.circulo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ff7b00c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+    animation: circulo-animation 1.5s ease-in-out;
+
+} 
+.fa-comments{
+    position: absolute;
+    font-size: 2.2em;
+    color: #ffffff;
+}
+.mensaje{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    background: #00bb2d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 120px;
+    right: 30px;
+    opacity: 0;
+    transition: 1s;
+}
+.menuUno{
+    display: none;
+}
+/* .containerhead{
+    position: relative;
+    top: 175px;
+} */
+
+.animado{
+    opacity: 0;
+    transition: all 1.5s;
+}
+.animados{
+    animation: locacion-animation 1.5s ease-in-out;
+}
+
+@keyframes locacion-animation{
+    0%{
+        transform: translateY(60px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes vista-animation{
+    0%{
+        transform:translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes arenal-animation{
+    0%{
+        transform:translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Animacion logo */
+
+@keyframes logo-animation {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+} 
+
+@keyframes nav-animation {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+} 
+
+/* Animacion button */
+
+@keyframes circulo-animation {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes linea-animation {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

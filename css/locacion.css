@@ -1,0 +1,189 @@
+/* ------------------------------------ Contenedor ------------------------------ */
+
+.locacion {
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.animado{
+    opacity: 0;
+    transition: all 1.5s;
+}
+.animados{
+    animation: locacion-animation 1.5s ease-in-out;
+}
+
+@keyframes locacion-animation{
+    0%{
+        transform: translateY(60px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------- Titulo de sección -------------------------------- */
+
+.locacion h2 {
+    color: var(--clr-Uno);
+    font-family: var(--f-h1);
+    font-size: 2.5em;
+}
+
+/* ------------------------------- Parrafo de la sección --------------------------- */
+
+.locacion p {
+    color: #000000;
+    font-family: var(--f-h2);
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+/* -------------------------------------- Botón ------------------------------------- */
+
+.btn2{
+    position: relative;
+}
+.btn2::after{
+    content: ""; 
+    height: 2px;
+    width: 20px;
+    background: var(--clr-Uno);
+    position: absolute;
+    transform: translateX(-30px);
+    transition: .6s;
+}
+.btn2 p{
+    color: var(--clr-Uno);
+    font-family: var(--f-h2);
+    font-size: 1em;
+    font-weight: 800;
+}
+
+/* --------------------------------- Imagen y Contedor ----------------------------- */
+ 
+.ima{
+    height: 428px;
+    width: 305px; 
+    background: #00000000;
+    border: 1.5px solid var(--clr-Uno);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ima img{
+    height: 420px;
+    width: auto;
+    margin-top: 5px;
+}
+.locaDesktop{ 
+    display: none;
+}
+
+@media only screen and (min-width: 720px){
+    .locacion{
+        height: 100vh;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .locacion h2{
+        font-size: 2.5em;
+        position: absolute;
+        left: 10%;
+        padding-bottom: 10%;
+    }
+    .locaDesktop{
+        display: flex;
+    }
+    .locacel{
+        display: none; 
+    }
+    .locacion .parrafo{
+        font-size: 1em;
+        text-align: start;
+        left: 10%;
+        font-weight: 100;
+        line-height: 30px;
+        position: absolute;
+    }
+    .ima{
+        position: absolute;
+        right: 20px;
+        height: 308px;
+        width: 218px;
+
+    }
+    .ima img{
+        height: 300px;
+        width: auto;
+    }
+    .btn2{
+        width: 79px;
+        height: 30px;
+        position: absolute;
+        left: 40%;
+        padding-top: 25%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .locacion{
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .ima{
+        /* position: absolute; */
+        height: 508px;
+        width: 360px;
+        right: 150px;
+    }
+    .ima img{
+        height: 500px;
+        width: auto;
+    }
+    .locacion h2{
+        font-size: 3.1em;
+        position: absolute;
+        left: 10%;
+    }
+    .locacion .parrafo{
+        font-size: 1.3em;
+        left: 15%;
+        position: absolute;
+    }
+    .btn2{
+        width: 79px;
+        height: 30px;
+        left: 480px;
+        top: 70px;
+        position: relative;
+        cursor: pointer;
+    }
+    .btn2 p{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.2em;
+    }
+    .btn2:hover:after{
+        width: 70px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,89 @@
+footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footercontainer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(50, 50, 50, 0.987);
+    width: 100%;
+}
+.footercontainer h4{
+    font-size: 1.1em;
+    font-family: var(--f-h2);
+    font-weight: 100;
+    color: #ffffff;
+    cursor: pointer;
+}
+.colu{  
+    padding: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.media{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.media ion-icon{
+    color: #ffffff;
+    font-size: 3em;
+    cursor: pointer;
+}
+.coludos{
+    padding-top: 45px;
+}
+.colum h4{
+    cursor: text;
+}
+.logodos img{
+    height: auto;
+    width: 160px;
+}
+.mapaDesktop{
+    display: none;
+}
+
+
+@media only screen and (min-width: 1200px){
+    .footercontainer{
+        flex-direction: row;
+        gap: 75px;
+    }
+    .media{
+        justify-content: center;
+    }
+    .mapauno{
+        display: none;
+    }
+    .mapaDesktop{
+        display: block;
+    } 
+
+} 
+
+/* .lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+  }
+  
+  .lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+    outline: none;
+  } */

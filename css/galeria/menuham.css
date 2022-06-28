@@ -1,0 +1,90 @@
+html { scroll-behavior: smooth; }
+label { cursor: pointer; }
+[type=radio], [type=checkbox] { display: none; }
+.wrap { max-width: 1440px; margin: 0 auto; }
+
+
+/*  Menu Hamburguesa */
+
+nav .menu span{
+    width: 30px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    display: inline-block;
+    transition: .3s;
+    z-index: 104;
+    left: 11%;
+}
+.menu span::before{
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: 0;
+    transition: 1s;
+}
+.menu span::after{
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 0;
+    transition: 1s;
+}
+
+/* Plasta Menu */ 
+
+nav .hide{
+    height: 105.3vh;
+    width: 100%;
+    background: #FFA400;
+    position: absolute;
+    top: -200vh;
+    z-index: 102;
+    transition: 1s;
+    left: 0;
+}
+nav .hide div{
+    position: relative;
+    color: white;
+    font-size: 2.2rem;
+    font-family: var(--f-h1);
+    font-weight: 100;
+    text-align: left;
+    line-height: 60px;
+    cursor: pointer;
+    top: 17vh;
+    padding-left: 30px;
+}
+/* Activación del Menu */
+
+#p_chk:checked ~ .hide{
+    top: 0vh;
+}
+#p_chk:checked ~ .menu span{
+    background: transparent;
+}
+#p_chk:checked ~ .menu span::before{
+    top: 0;
+    transform: rotate(-135deg);
+}
+#p_chk:checked ~ .menu span::after{
+    top: 0;
+    transform: rotate(135deg);
+}
+
+@media only screen and (min-width: 1100px){
+    nav .menu{
+        display: none
+    }
+    nav .hide{
+        display: none;
+    }
+}

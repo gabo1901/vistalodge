@@ -1,0 +1,162 @@
+/* ----------------------------------- Contenedor sección ---------------------------- */
+
+.habitaciones{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------- Contenedor Dos -------------------------------- */
+
+.containerrooms{
+    height: auto;
+    /* width: 80%; */
+}
+
+/* ----------------------------------- Contenedor de divs ------------------------------ */
+
+.roomcontaine{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Titulos de Sección */
+
+.habitaciones h2{
+    font-family: var(--f-h1);
+    color: var(--clr-Uno);
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+ 
+/* Contenedor de habitacinoes */
+
+.rooms{
+    width: 305px;
+    height: 530px;
+    border-radius: 3px;
+    box-shadow: 1px 0px 30px 0.0px rgba(0, 0, 0, 0.42)
+}
+
+/* Imagenes Habitaciones */
+ 
+.habitaciones img{
+    width: 305px;
+    height: auto;
+}
+
+/* Contenedor de Información habitaciones */
+
+.infor{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Titulo habitaciones */
+
+.infor h3{
+    font-family: var(--f-h3);
+    color: #000000;
+    font-size: 2em;
+    font-weight: 100;
+    padding-left: 20px;
+}
+
+/* Linea Habitaciones */
+
+.li4{
+    height: 1px;
+    width: 70%;
+    background: var(--clr-Uno);
+    margin-left: 20px;
+}
+
+/* Parrafo habitaciones */
+
+.infor p{
+    font-family: var(--f-h2);
+    color: #000000;
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+/* Botones Habitaciones */
+
+.btnTres{
+    height: 30px;
+    width: 100px;
+    background: var(--clr-Uno);
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+.btnTres p{
+    color: white;
+    font-family: var(--f-h2);
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 720px){
+    .rooms{
+        width: 255px;
+        height: 480px;
+    }
+    .habitaciones img{
+        width: 255px;
+        height: auto;
+    }
+    .habitaciones h2{
+        font-size: 3em;
+        bottom: 10px;
+        padding-left: 100px;
+        text-align: start;
+    }
+    .habitaciones img{
+        cursor: pointer;
+        transition: .4s;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .roomcontaine{
+        gap: 70px;
+    }
+    .rooms{
+        width: 305px;
+        height: 530px;
+    }
+    .habitaciones img{
+        width: 305px;
+        height: auto; 
+    }
+    .habitaciones h2{
+        font-size: 3em;
+        bottom: 10px;
+        padding-left: 0;
+    }
+    .btnTres{
+        cursor: pointer;
+        transition: .4s;
+    }
+    .btnTres:hover{
+        transform: scale(1.02);
+    }
+    .habitaciones img:hover{
+        transform: scale(1.02);
+    }
+}
+ 

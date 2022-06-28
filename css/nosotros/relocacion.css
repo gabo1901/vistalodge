@@ -1,0 +1,102 @@
+/* Responsive Locación */
+@media only screen and (min-width: 720px){
+    .locacion{
+        height: 70vh;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        text-align: start;
+    }
+    .locacion h3{
+        font-size: 2.5em;
+        position: absolute;
+        left: 10%;
+        padding-bottom: 15%;
+    }
+    .locaDesktop{
+        display: flex; 
+    }
+    .locacel{
+        display: none;
+    }
+    .locacion .parrafo{
+        font-size: 1em;
+        text-align: start;
+        left: 10%;
+        font-weight: 100;
+        line-height: 30px;
+        position: absolute;
+    }
+    .ima{
+        position: absolute;
+        right: 20px;
+        height: 308px;
+        width: 218px;
+
+    }
+    .ima img{
+        height: 300px;
+        width: auto;
+    }
+    .btn2{
+        width: 79px;
+        height: 30px;
+        position: absolute;
+        left: 40%;
+        padding-top: 25%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .locacion{
+        height: 100vh;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .ima{
+        /* position: absolute; */
+        height: 508px;
+        width: 408px;
+        right: 150px;
+    }
+    .ima img{
+        height: 500px;
+        width: auto;
+    }
+    .locacion h3{
+        font-size: 3em;
+        position: absolute;
+        left: 10%;
+    }
+    .locacion .parrafo{
+        font-size: 1.3em;
+        left: 15%;
+        position: absolute;
+    }
+    .btn2{
+        width: 79px;
+        height: 30px;
+        left: 560px;
+        top: 100px;
+        position: relative;
+        cursor: pointer;
+    }
+    .btn2 p{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.2em;
+    }
+    .btn2::after{
+        transform: translateX(-32px);
+    }
+    .btn2:hover:after{
+        width: 110px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 40px;
+    }
+}

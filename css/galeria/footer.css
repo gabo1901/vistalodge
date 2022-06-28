@@ -1,0 +1,68 @@
+footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.footercontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(50, 50, 50, 0.987);
+    width: 100%;
+}
+.footercontainer h3{
+    font-size: 1.1em;
+    font-family: var(--f-h2);
+    font-weight: 100; 
+    color: #ffffff;
+    cursor: pointer;
+}
+.colu{ 
+    padding: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.media{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.media ion-icon{
+    color: #ffffff;
+    font-size: 3em;
+    cursor: pointer;
+}
+.coludos{
+    padding-top: 45px;
+}
+.colum h3{
+    cursor: text;
+}
+.logodos img{
+    height: auto;
+    width: 160px;
+}
+.mapaDesktop{
+    display: none;
+}
+
+
+@media only screen and (min-width: 1200px){
+    .footercontainer{
+        flex-direction: row;
+        gap: 75px;
+    }
+    .media{
+        justify-content: center;
+    }
+    .mapauno{
+        display: none;
+    }
+    .mapaDesktop{
+        display: block;
+    } 
+
+}  

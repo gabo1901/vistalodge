@@ -1,0 +1,85 @@
+
+/* Container Servicios */
+.services{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 65px;
+    padding-top: 100px;
+}
+
+/* Servicios */
+
+.servi{
+    height: 330px;
+    width: 330px;
+    box-shadow: 1px 0px 20px 0.5px #0000005e;
+    border-radius: 3px; 
+    background: #ffffff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Parrafo servicios */
+
+.servi p{ 
+    color: #000000;
+    font-family: var(--f-h2);
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* Iconos Servicios */
+
+.servi i{
+    color: #ff7b00ce;
+    font-size: 9em;
+}
+ion-icon{
+    color: #ff7b00ce;
+    font-size: 9em;
+}
+
+@media only screen and (min-width: 720px){
+    .servi{
+        height: 304px;
+        width: 304px;
+    }
+    .services{
+        gap: 50px;
+    }
+} 
+
+@media only screen and (min-width: 1000px){
+    .servi{
+        height: 304px;
+        width: 304px;
+        transition: 1s;
+    } 
+    .services{
+        padding-top: 0; 
+    }
+    .servi p{
+        font-size: 1.8em;
+    }
+    .servi:hover{
+        background: #ff7b00ce;
+    }
+    .servi:hover i{
+        color: #ffffff;
+    }
+    .servi:hover p{
+        color: #ffffff;
+    }
+    .servi:hover ion-icon{
+        color: #ffffff;
+    }
+}
+   

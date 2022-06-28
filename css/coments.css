@@ -1,0 +1,77 @@
+.coments{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-scroll{
+    height: 500px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+}
+.fa-solid{
+    color: #797979;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: .4s;
+    z-index: 99;
+    position: absolute;
+}
+.flecha-right{
+    position: relative;
+    right: 5px;
+}
+.flecha-left{
+    position: relative;
+    left: 5px;
+}
+.comentarios{ 
+   width: 3115px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   transition: 1s;
+}
+.coment{
+    height: auto;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+.coment p{
+    color: #000000;
+    font-family: var(--f-h2);
+    font-weight: 100;
+    text-align: center;
+}
+.circuloima{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coment img{
+    width: 100px;
+    height: auto;
+    position: relative;
+}
+
+@media only screen and (min-width: 720px){
+    .comentarios{
+        left: -50px;
+    }
+}

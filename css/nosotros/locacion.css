@@ -1,0 +1,76 @@
+/* ------------------------------------ Contenedor ------------------------------ */
+
+.locacion {
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------- Titulo de sección -------------------------------- */
+
+.locacion h3 {
+    color: var(--clr-Uno);
+    font-family: var(--f-h1);
+    font-size: 2.5em;
+}
+
+/* ------------------------------- Parrafo de la sección --------------------------- */
+
+.locacion p {
+    color: #000000;
+    font-family: var(--f-h2);
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+/* -------------------------------------- Botón ------------------------------------- */
+
+.btn2{
+    position: relative;
+}
+.btn2::after{
+    content: ""; 
+    height: 2px;
+    width: 20px;
+    background: var(--clr-Uno);
+    position: absolute;
+    transform: translateX(-45px);
+    transition: .6s;
+}
+.btn2 p{
+    color: var(--clr-Uno);
+    font-family: var(--f-h2);
+    font-size: 1em;
+    font-weight: 800;
+}
+
+/* --------------------------------- Imagen y Contedor ----------------------------- */
+ 
+.ima{
+    height: 508px;
+    width: 360px;
+    background: #00000000;
+    border: 1.5px solid var(--clr-Uno);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ima img{
+    height: 500px;
+    width: auto;
+    margin-top: 5px;
+}
+.locaDesktop{
+    display: none;
+}

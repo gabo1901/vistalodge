@@ -1,0 +1,17 @@
+.mapa{
+    padding-top: 50px;
+}
+.mapa h4{
+    color: var(--clr-Uno);
+    font-family: var(--f-h1);
+    font-weight: 100;
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 800px){
+    .mapa h4{
+        font-size: 3.2em;
+    }
+} 
