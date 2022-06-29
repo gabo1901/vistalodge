@@ -246,7 +246,26 @@ nav{
 }
 
 /* Responsive header */
-
+@media only screen and (min-width: 720px){
+    .arenal{
+        font-size: 3.9em;
+    }
+    .vista{
+        position: relative;
+        font-size: 3.9em;
+        margin-left: 60px;
+        bottom: 65px;
+    }
+    .circulo{
+        width: 90px;
+        height: 90px;
+        transition: .4s;
+        cursor: pointer;
+    }
+    .mensaje{
+        right: 40px;
+    }
+}  
 @media only screen and (min-width: 1100px){
     header{
         height: 100vh;
@@ -307,12 +326,6 @@ nav{
     }
     .titulo{
         margin-left: 70px;
-    }
-    .circulo{
-        width: 90px;
-        height: 90px;
-        transition: .4s;
-        cursor: pointer;
     }
     .circulo:hover{
         transform: scale(1.1);

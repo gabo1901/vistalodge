@@ -225,6 +225,7 @@ nav{
     }
 }
 
+/*********************************** Responsive Head Indez ********************************************/
 
 @media only screen and (min-width: 720px){
     header{
@@ -232,11 +233,20 @@ nav{
         background-size: cover;
     }
     .arenal{
-        font-size: 4em;
+        font-size: 4.5em;
     }
     .vista{ 
-        font-size: 3.5em;
+        font-size: 4em;
         bottom: 70px;
+    }
+    .circulo{
+        width: 90px;
+        height: 90px;
+        transition: .4s;
+        cursor: pointer;
+    }
+    .mensaje{
+        right: 40px;
     }
 }
 
@@ -271,9 +281,6 @@ nav{
         right: 120px;
         top: 20px;
     }
-    .vista{
-        bottom: 50px;
-    }
     .uno:hover{
         border-bottom: 1.5px solid#ffffff;
     }
@@ -295,6 +302,7 @@ nav{
     .vista{
         font-size: 4em;
         margin-left: 210px;
+        bottom: 50px;
     }
     .titulo{
         margin-left: 70px;

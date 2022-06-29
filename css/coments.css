@@ -73,9 +73,18 @@
 
 @media only screen and (min-width: 720px){
     .comentarios{
+        left: -25px;
+    }
+    .horizontal-scroll{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .comentarios{
         left: -50px;
     }
     .horizontal-scroll{
         width: 80%;
     }
 }
+
