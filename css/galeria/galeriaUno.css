@@ -60,7 +60,7 @@ img{
 .hotel::after{
     content: " ";
     height: 2px;
-    width: 30px;
+    width: 25px;
     background: var(--clr-Uno);
     position: absolute;
     transition: .4s;

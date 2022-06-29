@@ -53,11 +53,11 @@ img{
     position: relative;
 }
 .atrac:hover::after{
-    width: 190px;
+    width: 170px;
     height: 2px;
 }
 .hotel:hover::after{
-    width: 80px;
+    width: 70px;
     height: 2px;
 }
 
