@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb{
 header{
     height: 100vh;
     width: 100%;
-    background: var(--opacity), url("../../Originales/foto\ 58.jpg") no-repeat center center;
+    background: var(--opacity), url("../../imagenes/54.webp") no-repeat center center;
     background-size: cover;
     position: relative;
 
