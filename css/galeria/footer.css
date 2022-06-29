@@ -30,9 +30,9 @@ footer{
     align-items: center;
     gap: 10px;
 }
-.media ion-icon{
-    color: #ffffff;
-    font-size: 3em;
+.media img{
+    height: 40px;
+    width: auto;
     cursor: pointer;
 }
 .coludos{

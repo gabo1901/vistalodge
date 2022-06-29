@@ -37,7 +37,7 @@ footer{
 }
 .coludos{
     padding-top: 45px;
-}
+} 
 .colum h5{
     cursor: text;
 }
@@ -47,4 +47,21 @@ footer{
 }
 .mapaDesktop{
     display: none;
+} 
+
+@media only screen and (min-width: 1200px){
+    .footercontainer{
+        flex-direction: row;
+        gap: 75px;
+    }
+    .media{
+        justify-content: center;
+    }
+    .mapauno{
+        display: none;
+    }
+    .mapaDesktop{
+        display: block;
+    } 
+
 } 

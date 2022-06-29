@@ -26,7 +26,7 @@ footer{
     flex-direction: column;
 }
 .media{
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 10px;
 }
@@ -48,3 +48,21 @@ footer{
 .mapaDesktop{
     display: none;
 }
+
+
+@media only screen and (min-width: 1200px){
+    .footercontainer{
+        flex-direction: row;
+        gap: 75px;
+    }
+    .media{
+        justify-content: center;
+    }
+    .mapauno{
+        display: none;
+    }
+    .mapaDesktop{
+        display: block;
+    } 
+
+} 
