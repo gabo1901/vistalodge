@@ -1,8 +1,10 @@
+@import url(normalize.css);
 @import url(galeriaUno.css);
 @import url(galeriaDos.css);
 @import url(footer.css);
 @import url(header.css);
 @import url(menuham.css);
+
 /* @import url(lightbox.css); */
 /* @import url(reheader.css); */
 /* @import url(regaleriaUno.css); */

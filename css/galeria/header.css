@@ -130,9 +130,10 @@ nav{
     animation: circulo-animation 1.5s ease-in-out;
 
 }
-.fa-comments{
+.circulo img{
     position: absolute;
-    font-size: 2.2em;
+    height: 50px;
+    width: auto;
     color: #ffffff;
 }
 .mensaje{

@@ -48,9 +48,6 @@ function scrollHorizontaly(val) {
     comentarios.style.left = actualPosicion +'px';
 }; 
 
-
-
-
  var animado = document.querySelectorAll(".animado")
  
  function mostrarScroll(){
