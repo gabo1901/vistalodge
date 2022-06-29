@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb{
 header{
     height: 100vh;
     width: 100%;
-    /* background: var(--opacity), url("../../imagenes/galeria/hotel/13.jpg") no-repeat center center; */
+    background: var(--opacity), url("../../imagenes/Index/primera.webp") no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -129,9 +129,10 @@ nav{
     animation: circulo-animation 1.5s ease-in-out;
 
 } 
-.fa-comments{
+.circulo img{
     position: absolute;
-    font-size: 2.2em;
+    height: 40px;
+    width: auto;
     color: #ffffff;
 }
 .mensaje{
