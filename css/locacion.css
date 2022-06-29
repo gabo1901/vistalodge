@@ -63,7 +63,7 @@
     background: var(--clr-Uno);
     position: absolute;
     transform: translateX(-30px);
-    transition: .6s;
+    transition: .6s; 
 }
 .btn2 p{
     color: var(--clr-Uno);
