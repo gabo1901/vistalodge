@@ -38,6 +38,7 @@
    align-items: center;
    position: absolute;
    transition: 1s;
+   gap: 17px;
 }
 .coment{
     height: auto;
@@ -73,5 +74,8 @@
 @media only screen and (min-width: 720px){
     .comentarios{
         left: -50px;
+    }
+    .horizontal-scroll{
+        width: 80%;
     }
 }

@@ -1,7 +1,7 @@
 /* ------------------------------------ Contenedor ------------------------------ */
 
 .locacion {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     align-items: center;
     gap: 20px;
     text-align: center;
+    padding: 30px;
 }
 .animado{
     opacity: 0;
@@ -46,7 +47,7 @@
 .locacion p {
     color: #000000;
     font-family: var(--f-h2);
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 100;
 }
 
@@ -67,7 +68,7 @@
 .btn2 p{
     color: var(--clr-Uno);
     font-family: var(--f-h2);
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 800;
 }
 

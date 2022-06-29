@@ -24,7 +24,7 @@ function boton(){
     }
 }
 var actualPosicion = 0,
-    scrollAmount = 389.375;
+    scrollAmount = 390;
 
     var horizon = document.querySelector('.horizontal-scroll');
     var comentarios = document.querySelector('.comentarios');
