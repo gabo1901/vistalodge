@@ -10,9 +10,9 @@ footer{
     flex-direction: column; 
     justify-content: center;
     background: rgba(50, 50, 50, 0.987);
-    width: 100%;
+    width: 100%; 
 }
-.footercontainer h5{
+.footercontainer h3{
     font-size: 1.1em;
     font-family: var(--f-h2);
     font-weight: 100; 
@@ -48,3 +48,22 @@ footer{
 .mapaDesktop{
     display: none;
 }
+
+/* Responsive */
+
+@media only screen and (min-width: 1200px){
+    .footercontainer{
+        flex-direction: row;
+        gap: 75px;
+    }
+    .media{
+        justify-content: center;
+    }
+    .mapauno{
+        display: none;
+    }
+    .mapaDesktop{
+        display: block;
+    } 
+
+} 
