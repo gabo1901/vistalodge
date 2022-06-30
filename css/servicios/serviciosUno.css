@@ -58,8 +58,10 @@
     transition: .4s;
     line-height: 25px;
 }
-.oculto:hover{
-    opacity: 1;
+.foboton{
+    background: transparent;
+    border: none;
+    text-align: start;
 }
 .oculto p{
     color: white;
@@ -78,12 +80,22 @@ img{
     width: auto;
 }
 
+@media only screen and (max-width: 720px){
+    .foboton:focus .oculto{ 
+        opacity: 1;
+    }   
+}
+
 /* Responsive Servicios */
 
 @media only screen and (min-width: 720px){
     .containeservice{
         gap: 50px;
     }
+    .oculto:hover{
+        opacity: 1;
+    }
+    
 }  
 
 @media only screen and (min-width: 1100px){
