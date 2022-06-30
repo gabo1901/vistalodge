@@ -152,6 +152,11 @@ nav{
     opacity: 0;
     transition: 1s;
 }
+.whats img{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
 .menuUno{
     display: none;
 }
