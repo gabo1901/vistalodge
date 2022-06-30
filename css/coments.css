@@ -1,3 +1,4 @@
+/****************************** Contenedor Comentarios ****************************** */
 .coments{
     height: auto;
     width: 100%;
@@ -5,6 +6,9 @@
     justify-content: center;
     align-items: center;
 }
+
+/* ******************************** Tamaño scroll ****************************** */
+
 .horizontal-scroll{
     height: 500px;
     width: 100%; 
@@ -15,6 +19,9 @@
     position: relative;
     left: 0;
 }
+
+/* Flechas */
+
 .fa-solid{
     color: #797979;
     font-size: 1.5em;
@@ -23,16 +30,25 @@
     z-index: 99;
     position: absolute;
 }
+
+/* Flecha Derecha */
+
 .flecha-right{
     position: relative;
     right: 5px;
 }
+
+/* Flecha Izquierda */
+
 .flecha-left{
     position: relative;
     left: 5px;
-}
+} 
+
+/* Comentarios */
+
 .comentarios{ 
-   width: 3115px;
+   width: 3100px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -40,6 +56,9 @@
    transition: 1s;
    gap: 17px;
 }
+
+/* Cada comentario solo */
+
 .coment{
     height: auto;
     width: 100%;
@@ -50,12 +69,18 @@
     gap: 5px;
     position: relative;
 }
+
+/* Parrafor de Cometarios */
+
 .coment p{
     color: #000000;
     font-family: var(--f-h2);
     font-weight: 100;
     text-align: center;
 }
+
+/* Contenedor de Imagenes */
+
 .circuloima{
     height: 100px;
     width: 100px;
@@ -65,11 +90,16 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Imagenes */
+
 .coment img{
     width: 100px;
     height: auto;
     position: relative;
 }
+
+/* Responsive */
 
 @media only screen and (min-width: 720px){
     .comentarios{

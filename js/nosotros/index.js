@@ -24,30 +24,6 @@ function boton(){
     }
 }
 
-// var actualPosicion = 0,
-//     scrollAmount = 389.375;
-
-//     var horizon = document.querySelector('.horizontal-scroll');
-//     var comentarios = document.querySelector('.comentarios');
-
-//     var arrowLeft = document.querySelector('.fa-angle-left');
-//     var arrowRight = document.querySelector('.fa-angle-right');
-
-//     let maxScroll = -comentarios.offsetWidth + horizon.offsetWidth;
-
-// function scrollHorizontaly(val) {
-//     actualPosicion += (val * scrollAmount);
-
-//     if(actualPosicion > 0){
-//         actualPosicion = 0
-//     }
-//     if(actualPosicion < maxScroll){
-//         actualPosicion = maxScroll;
-//     }
-
-//     comentarios.style.left = actualPosicion +'px';
-// }; 
-
  var animado = document.querySelectorAll(".animado")
  function mostrarScroll(){
      var scrollTop = document.documentElement.scrollTop;
@@ -56,7 +32,7 @@ function boton(){
 
         var alturaAnimado = animado[i].offsetTop;
 
-         if(alturaAnimado -200 < scrollTop){
+         if(alturaAnimado -450 < scrollTop){
              animado[i].style.opacity = "1";
              animado[i].classList.add("animados")
 

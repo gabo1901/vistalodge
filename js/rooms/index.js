@@ -33,7 +33,7 @@ function boton(){
 
         var alturaAnimado = animado[i].offsetTop;
 
-         if(alturaAnimado + 300 < scrollTop){
+         if(alturaAnimado + 190 < scrollTop){
              animado[i].style.opacity = "1"; 
              animado[i].classList.add("animados")
 

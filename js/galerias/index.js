@@ -47,7 +47,7 @@ function mostrarScroll(){
 
        var alturaAnimado = animado[i].offsetTop;
 
-        if(alturaAnimado + 100 < scrollTop){
+        if(alturaAnimado + 170 < scrollTop){
             animado[i].style.opacity = "1";
             animado[i].classList.add("animados")
 
@@ -56,7 +56,9 @@ function mostrarScroll(){
 }
 window.addEventListener("scroll", mostrarScroll);
 
-// Galería
+
+
+// ****************************************** Galería *********************************
 
 // Variables
 
@@ -68,7 +70,7 @@ const lightbox = document.querySelector(".contenedor-principal");
 const imagenActiva = document.querySelector(".imagen-activa");
 var indiceImagen = 0;
 
-// Abre LightHouse
+// Abre LightBox
 
 const abreLightBox = (e) =>{
     imagenActiva.src = e.target.src;
@@ -80,7 +82,7 @@ imagenes.forEach((imagen)=>{
     imagen.addEventListener('click', abreLightBox);
 });
 
-// Cierre LightHouse
+// Cierre LightBox
 
 btnCierra.addEventListener('click', ()=>{
     lightbox.style.display = "none";
@@ -124,7 +126,7 @@ const lightboxDos = document.querySelector(".contenedor-principal2");
 const imagenActivaDos = document.querySelector(".imagen-activa2");
 var indiceImagenDos = 0;
 
-// Abre LightHouse
+// Abre LightBox
 
 const abreLightBoxDos = (e) =>{
     imagenActivaDos.src = e.target.src;
@@ -136,7 +138,7 @@ imagenesDos.forEach((imagen)=>{
     imagen.addEventListener('click', abreLightBoxDos);
 });
 
-// Cierre LightHouse
+// Cierre LightBox
 
 btnCierraDos.addEventListener('click', ()=>{
     lightboxDos.style.display = "none";

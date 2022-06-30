@@ -48,6 +48,8 @@ function scrollHorizontaly(val) {
     comentarios.style.left = actualPosicion +'px';
 }; 
 
+//************************** Animación al Scroll ******************************
+
  var animado = document.querySelectorAll(".animado")
  
  function mostrarScroll(){
@@ -57,7 +59,7 @@ function scrollHorizontaly(val) {
 
         var alturaAnimado = animado[i].offsetTop;
 
-         if(alturaAnimado -400 < scrollTop){
+         if(alturaAnimado -550 < scrollTop){
              animado[i].style.opacity = "1"; 
              animado[i].classList.add("animados")
 
@@ -66,8 +68,7 @@ function scrollHorizontaly(val) {
  }
 window.addEventListener("scroll", mostrarScroll);
 
-
-
+//*************************** LightBox ********************************
 
 const btnCierra = document.querySelector(".btn-cierra");
 const imagenes = document.querySelectorAll(".habita1 img");
@@ -75,7 +76,7 @@ const lightbox = document.querySelector(".contenedor-principal");
 const imagenActiva = document.querySelector(".imagen-activa");
 var indiceImagen = 0;
 
-// Abre LightHouse
+// Abre LightBox
 
 const abreLightBox = (e) =>{
     imagenActiva.src = e.target.src;
@@ -87,7 +88,7 @@ imagenes.forEach((imagen)=>{
     imagen.addEventListener('click', abreLightBox);
 });
 
-// Cierre LightHouse
+// Cierre LightBox
 
 btnCierra.addEventListener('click', ()=>{
     lightbox.style.display = "none";
@@ -103,7 +104,7 @@ const lightbox2 = document.querySelector(".contenedor-principal2");
 const imagenActiva2 = document.querySelector(".imagen-activa2");
 var indiceImagen2 = 0;
 
-// Abre LightHouse
+// Abre LightBox
 
 const abreLightBox2 = (e) =>{
     imagenActiva2.src = e.target.src;
@@ -115,7 +116,7 @@ imagenes2.forEach((imagen)=>{
     imagen.addEventListener('click', abreLightBox2);
 });
 
-// Cierre LightHouse
+// Cierre LightBox
 
 btnCierra2.addEventListener('click', ()=>{
     lightbox2.style.display = "none";
@@ -129,7 +130,7 @@ const lightbox3 = document.querySelector(".contenedor-principal3");
 const imagenActiva3 = document.querySelector(".imagen-activa3");
 var indiceImagen3 = 0;
 
-// Abre LightHouse
+// Abre LightBox
 
 const abreLightBox3 = (e) =>{
     imagenActiva3.src = e.target.src;
@@ -141,7 +142,7 @@ imagenes3.forEach((imagen)=>{
     imagen.addEventListener('click', abreLightBox3);
 });
 
-// Cierre LightHouse
+// Cierre LightBox
 
 btnCierra3.addEventListener('click', ()=>{
     lightbox3.style.display = "none";

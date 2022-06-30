@@ -80,7 +80,7 @@ function mostrarScroll(){
 
        var alturaAnimado = animado[i].offsetTop;
 
-        if(alturaAnimado -400 < scrollTop){
+        if(alturaAnimado -500 < scrollTop){
             animado[i].style.opacity = "1";
             animado[i].classList.add("animados")
 
