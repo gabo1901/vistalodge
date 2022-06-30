@@ -10,7 +10,7 @@
 /* ------------------------------------- Contenedor Dos -------------------------------- */
 
 .containerrooms{
-    height: auto;
+    height: auto; 
     /* width: 80%; */
 }
 
@@ -160,3 +160,68 @@
     }
 }
  
+.lightboxAnimate{
+    animation: lightboxAnimate-animation 1s ease-in-out;
+}
+
+/************************************* Galerías Lightbox ***************************************/
+.activa{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+.principal{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #000000d0;
+    transition: .4s;
+}
+.interno{
+    width: 500px;
+    height: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    transition: .4s;
+}
+
+/* Botones Lighthouse */
+
+.botonhouse{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+    transition: .4s;
+    height: 40px;
+    width: auto;
+}
+.botonhouse img{
+    height: 40px;
+    width: auto;
+}
+.cierra{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 3em;
+}
+.lightboxAnimate{
+    animation: lightboxAnimate-animation 1s ease-in-out;
+}
+
+@keyframes lightboxAnimate-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
