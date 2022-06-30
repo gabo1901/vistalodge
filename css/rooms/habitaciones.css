@@ -91,10 +91,10 @@ img{
 .roomDesktop{
     display: none;
 }
-.hideimg{
+/* .hideimg{
     display: none;
-}
-.btnTres{
+} */
+/* .btnTres{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ img{
 }
 .btnTres:hover{
     background: var(--clr-Uno);
-}
+} */
 
 
 @media only screen and (min-width: 720px){
@@ -157,7 +157,7 @@ img{
     .roomDesktop{
         display: flex;
     }
-    .btnTres{
+    /* .btnTres{
         height: 20px;
         width: 90px;
         border-radius: 4px;
@@ -165,7 +165,7 @@ img{
         left: 20px;
         bottom: 15px;
         transition: .4s;
-    }
+    } */
 }
 
 
@@ -240,12 +240,12 @@ img{
     .cuartos img:hover{
         transform: scale(1.02);
     }
-    .btnTres{
+    /* .btnTres{
         height: 30px;
         width: 100px;
         left: 20px;
         bottom: 40px;
         transition: .4s;
         font-size: 1em;
-    }
+    } */
 }

@@ -1,3 +1,6 @@
+
+/* Galerías Todo */
+
 .galerias{
     height: auto;
     width: 100%;
@@ -8,7 +11,7 @@
     z-index: 400;
     position: relative;
 }
-.image p{
+/* .image p{
     color: #000000;
     font-family: var(--f-h2);
     font-size: 2em;
@@ -17,13 +20,19 @@
 .image i{ 
     color: #ff7b00ce;
     font-size: 9em;
-}
+} */
+
+/* Contenedor Galería  */
+
 .containegalery{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 90%;
 }
+
+/* Imagenes de Galería Uno */
+
 .containegalery img{
     height: auto;
     width: 350px;
@@ -34,11 +43,17 @@
 .column{
     flex: 24%;
 }
+
+/* Contenedor Imagenes */
+
 .image{
     cursor: pointer;
     transition: .4s;
     overflow: hidden;
 }
+
+/* Textos y Botones */
+
 .gale{
     display: flex;
     justify-content: center;
@@ -51,12 +66,18 @@
     transition: .4s;   
     padding-top: 50px;
 }
+
+/* Botón de Hotel */
+
 .hotel{
     position: relative;
     cursor: pointer;
     transition: .4s;
     border-bottom: 2px solid #ff7b0000;
 }
+
+/* Hover Hotel */
+
 .hotel::after{
     content: " ";
     height: 2px;
@@ -113,6 +134,7 @@
     width: 335px;
     object-fit: contain;
     padding: 5px;
+    transition: .4s;
 }
 .column{
     flex: 24%;
@@ -149,3 +171,130 @@
         width: 100%;
     }
 }  
+
+
+/* Galerías Lightbox */
+.imagen-activa{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+.contenedor-principal{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #000000d0;
+    transition: .4s;
+}
+.contenedor-interno{
+    width: 500px;
+    height: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    transition: .4s;
+}
+
+/* Botones Lighthouse */
+
+.botonhouse{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+    transition: .4s;
+    height: 40px;
+    width: auto;
+}
+.botonhouse img{
+    height: 40px;
+    width: auto;
+}
+.btn-cierra{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 3em;
+}
+.btn-retrocede{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 3em;
+}
+.btn-adelanta{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 3em;
+}
+
+
+/************************************* Galerías Lightbox dos *************************************/
+.imagen-activa2{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+.contenedor-principal2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #000000d0;
+    transition: .4s;
+}
+.contenedor-interno2{
+    width: 500px;
+    height: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    transition: .4s;
+}
+
+/* Botones Lighthouse */
+
+.botonhouse2{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+    transition: .4s;
+    height: 40px;
+    width: auto;
+}
+.botonhouse2 img{
+    height: 40px;
+    width: auto;
+}
+.btn2-cierra{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 3em;
+}
+.btn2-retrocede{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 3em;
+}
+.btn2-adelanta{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 3em;
+}
+

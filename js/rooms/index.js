@@ -24,32 +24,6 @@ function boton(){
     }
 }
 
-// var actualPosicion = 0,
-//     scrollAmount = 389.375;
-
-//     var horizon = document.querySelector('.horizontal-scroll');
-//     var comentarios = document.querySelector('.comentarios');
-
-//     var arrowLeft = document.querySelector('.fa-angle-left');
-//     var arrowRight = document.querySelector('.fa-angle-right');
-
-//     let maxScroll = -comentarios.offsetWidth + horizon.offsetWidth;
-
-// function scrollHorizontaly(val) {
-//     actualPosicion += (val * scrollAmount);
-
-//     if(actualPosicion > 0){
-//         actualPosicion = 0
-//     }
-//     if(actualPosicion < maxScroll){
-//         actualPosicion = maxScroll;
-//     }
-
-//     comentarios.style.left = actualPosicion +'px';
-// }; 
-
-
-
 
  var animado = document.querySelectorAll(".animado")
  function mostrarScroll(){
