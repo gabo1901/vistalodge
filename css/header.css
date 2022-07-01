@@ -125,7 +125,6 @@ nav{
     bottom: 30px;
     z-index: 1000;
     animation: circulo-animation 1.5s ease-in-out;
-
 }
 .fa-comments{
     position: absolute;

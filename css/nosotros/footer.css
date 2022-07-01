@@ -2,13 +2,11 @@ footer{
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: center;
     padding-top: 100px;
 }
 .footercontainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background: rgba(50, 50, 50, 0.987);
     width: 100%;
 }
@@ -24,10 +22,12 @@ footer{
     gap: 20px;
     display: flex; 
     flex-direction: column;
+    text-align: center;
 }
 .media{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 .media ion-icon{
@@ -40,6 +40,7 @@ footer{
 } 
 .colum h5{
     cursor: text;
+    text-align: center;
 }
 .logodos img{
     height: auto;
@@ -63,5 +64,15 @@ footer{
     .mapaDesktop{
         display: block;
     } 
+    .colum h5{
+        cursor: text;
+        text-align: start;
+    }
+    .colu{  
+        text-align: start;
+    }
+    .media{
+        justify-content: flex-start;
+    }
 
 } 
