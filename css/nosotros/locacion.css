@@ -117,8 +117,6 @@
         width: auto;
     }
     .btn2{
-        width: 79px;
-        height: 30px;
         position: absolute;
         left: 40%;
         padding-top: 30%;
@@ -157,9 +155,7 @@
         position: absolute;
     }
     .btn2{
-        width: 79px;
-        height: 30px;
-        left: 560px;
+        left: 480px;
         top: 100px;
         position: relative;
         cursor: pointer;
@@ -170,7 +166,7 @@
         font-size: 1.2em;
     }
     .btn2::after{
-        transform: translateX(-32px);
+        transform: translateX(1px);
     }
     .btn2:hover:after{
         width: 110px;

@@ -64,6 +64,7 @@ footer{
     }
     .mapaDesktop{
         display: block;
+        width: 800px;
     } 
     .colum h4{
         cursor: text;

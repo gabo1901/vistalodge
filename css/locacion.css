@@ -62,14 +62,14 @@
     width: 20px;
     background: var(--clr-Uno);
     position: absolute;
-    transform: translateX(-30px);
+    transform: translateX(-34px);
     transition: .6s; 
 }
 .btn2 p{
     color: var(--clr-Uno);
     font-family: var(--f-h2);
     font-size: 1.1em;
-    font-weight: 800;
+    font-weight:800;
 }
 
 /* --------------------------------- Imagen y Contedor ----------------------------- */
@@ -131,8 +131,6 @@
         width: auto;
     }
     .btn2{
-        width: 79px;
-        height: 30px;
         position: absolute;
         left: 40%;
         padding-top: 25%;
@@ -166,8 +164,6 @@
         position: absolute;
     }
     .btn2{
-        width: 79px;
-        height: 30px;
         left: 480px;
         top: 70px;
         position: relative;
